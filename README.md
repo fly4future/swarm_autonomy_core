@@ -4,7 +4,8 @@ Digest of the swarm autonomy software at [Fly4Future](https://github.com/fly4fut
 
 This repository gives an overview of the technology behind our autonomous
 multi-UAV systems: what the building blocks are, what each one does, and how
-they fit together. The implementations live in separate, private repositories.
+they fit together. The implementations live in separate, private repositories,
+see [Software repositories](#software-repositories).
 
 ## Overview
 
@@ -105,6 +106,19 @@ A compact embedded board, built in-house, that provides:
   (CPU-only and NVIDIA GPU).
 - A camera simulator for developing and testing without real flights.
 - Tooling for camera calibration and session management on the drone.
+
+## Software repositories
+
+The software itself is kept in the following private repositories. Access is
+available on request, see [Contact](#contact).
+
+| Repository | Content |
+|---|---|
+| [fly4future/mrs_uav_core](https://github.com/fly4future/mrs_uav_core) | Onboard autonomy core: our maintained fork of the MRS UAV System core. |
+| [fly4future/ultraloc](https://github.com/fly4future/ultraloc) | ULTRALOC relative localization: optical detection and tracking, UWB driver, fusion. |
+| [fly4future/uvdar_firmware](https://github.com/fly4future/uvdar_firmware) | Firmware of the ULTRALOC board: UWB ranging, UV marker control, USB configuration. |
+| [fly4future/ultraloc_deployment](https://github.com/fly4future/ultraloc_deployment) | Containerised deployment and reference configurations for cameras and compute targets. |
+| [fly4future/uvdar_ros_fusion](https://github.com/fly4future/uvdar_ros_fusion) | Earlier UWB and UVDAR fusion, superseded by ULTRALOC. |
 
 ## Repository contents
 
