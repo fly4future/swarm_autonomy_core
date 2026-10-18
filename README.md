@@ -1,6 +1,6 @@
 # swarm_autonomy_core
 
-Digest of the swarm autonomy software at [fly4future](https://github.com/fly4future).
+Digest of the swarm autonomy software at [Fly4Future](https://github.com/fly4future).
 
 This repository gives an overview of the technology behind our autonomous
 multi-UAV systems: what the building blocks are, what each one does, and how
@@ -46,11 +46,10 @@ Every drone runs a complete autonomy stack that handles:
 - plugin interfaces, so new controllers, trackers, estimators and hardware back ends can be added without changing the core,
 - a multirotor simulator for testing before flight.
 
-The core is based on the open-source
-[MRS UAV System](https://github.com/ctu-mrs/mrs_uav_system) (ROS 2), developed
-by the [Multi-Robot Systems group](http://mrs.felk.cvut.cz/) at the Czech
-Technical University in Prague. We keep our own maintained fork, adapted for our
-platforms and deployments.
+The stack is built on ROS 2 and runs on the open-source
+[MRS UAV System](https://github.com/ctu-mrs/mrs_uav_system). We maintain our own
+fork, adapted for our platforms and deployments, and our components are fully
+compatible with its controller, tracker, estimator and hardware interfaces.
 
 ## ULTRALOC: relative localization
 
@@ -71,9 +70,6 @@ combines two sensing methods whose strengths and weaknesses complement each othe
   wide-angle and fisheye lenses are supported.
 - Image processing runs in real time on the drone's computer and can be
   accelerated on a GPU where one is available.
-
-UVDAR originates from research at the MRS group, CTU Prague. See
-[Publications](#publications).
 
 ### UWB: radio ranging
 
@@ -114,12 +110,11 @@ A compact embedded board, built in-house, that provides:
 
 | Directory | Content |
 |---|---|
-| [`autonomy_interfaces/`](autonomy_interfaces) | Plugin interfaces of the onboard autonomy core (controllers, trackers, state estimators, hardware API), taken from the MRS UAV System. |
 | [`ultraloc_interfaces/`](ultraloc_interfaces) | Public C++ interfaces and ROS 2 messages of ULTRALOC: bearing sources, range sources and the relative localizer. |
 
 ## Publications
 
-The scientific foundations of the optical part of ULTRALOC:
+Publications on the optical relative localization method used in ULTRALOC:
 
 - V. Walter, N. Staub, A. Franchi, M. Saska. *UVDAR System for Visual Relative
   Localization With Application to Leader–Follower Formations of Multirotor UAVs.*
@@ -138,14 +133,7 @@ The scientific foundations of the optical part of ULTRALOC:
 
 ## License
 
-- [`ultraloc_interfaces/`](ultraloc_interfaces) and the rest of this repository: proprietary, all rights reserved, see [LICENSE](LICENSE).
-- [`autonomy_interfaces/`](autonomy_interfaces): BSD 3-Clause, © Multi-robot Systems group, CTU Prague, see [LICENSE](autonomy_interfaces/LICENSE).
-
-## Acknowledgements
-
-This work builds on many years of research and open-source software from the
-[Multi-Robot Systems group](http://mrs.felk.cvut.cz/) at the Czech Technical
-University in Prague.
+Proprietary, © Fly4Future s.r.o., all rights reserved. See [LICENSE](LICENSE).
 
 ## Contact
 
