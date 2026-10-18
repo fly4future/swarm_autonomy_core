@@ -114,7 +114,7 @@ available on request, see [Contact](#contact).
 
 | Repository | Content |
 |---|---|
-| [fly4future/mrs_uav_core](https://github.com/fly4future/mrs_uav_core) | Onboard autonomy core: our maintained fork of the MRS UAV System core. |
+| [fly4future/f4f_uav_core](https://github.com/fly4future/f4f_uav_core) | Onboard autonomy core: our maintained fork of the MRS UAV System core. |
 | [fly4future/ultraloc](https://github.com/fly4future/ultraloc) | ULTRALOC relative localization: optical detection and tracking, UWB driver, fusion. |
 | [fly4future/uvdar_firmware](https://github.com/fly4future/uvdar_firmware) | Firmware of the ULTRALOC board: UWB ranging, UV marker control, USB configuration. |
 | [fly4future/ultraloc_deployment](https://github.com/fly4future/ultraloc_deployment) | Containerised deployment and reference configurations for cameras and compute targets. |
