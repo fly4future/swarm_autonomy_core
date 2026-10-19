@@ -1,4 +1,4 @@
-# Distance from the own UAV to an identified target.
+# Distance from the own robot to an identified target.
 
 std_msgs/Header header
 

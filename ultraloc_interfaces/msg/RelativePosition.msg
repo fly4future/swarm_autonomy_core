@@ -1,4 +1,4 @@
-# Estimated position of a target relative to the own UAV.
+# Estimated position of a target relative to the own robot.
 # header.frame_id is the localization origin frame.
 
 std_msgs/Header header

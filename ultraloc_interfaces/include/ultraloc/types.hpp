@@ -10,7 +10,7 @@ namespace ultraloc
 {
 
 /**
- * @brief Identity of a localized target (a neighbouring UAV or a marked point on the ground).
+ * @brief Identity of a localized target (a neighbouring robot or a marked point in the environment).
  *
  * Every measurement source reports measurements already associated with a target identity.
  */
@@ -30,7 +30,7 @@ struct Bearing
 };
 
 /**
- * @brief Distance from the own UAV to a target.
+ * @brief Distance from the own robot to a target.
  */
 struct Range
 {
@@ -40,7 +40,7 @@ struct Range
 };
 
 /**
- * @brief Estimated position of a target relative to the own UAV.
+ * @brief Estimated position of a target relative to the own robot.
  */
 struct RelativePosition
 {
