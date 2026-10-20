@@ -1,4 +1,4 @@
-# Relative Robot Autonomy
+# AgentSwarm Core
 
 Digest of the relative robot autonomy software at [Fly4Future](https://github.com/fly4future),
 and the starting point of the project **Intent-Aware Sensor for Agile, Dense
