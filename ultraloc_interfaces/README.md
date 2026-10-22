@@ -40,5 +40,4 @@ colcon build --packages-select ultraloc_interfaces
 
 ## License
 
-Proprietary, all rights reserved. See [LICENSE](LICENSE). For licensing,
-contact [info@fly4future.com](mailto:info@fly4future.com).
+Proprietary, all rights reserved. See [LICENSE](LICENSE).

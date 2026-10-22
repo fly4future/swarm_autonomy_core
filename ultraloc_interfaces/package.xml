@@ -6,7 +6,7 @@
   <version>0.1.0</version>
   <description>Public interfaces of the ULTRALOC relative localization system</description>
 
-  <maintainer email="info@fly4future.com">Fly4Future s.r.o.</maintainer>
+  <maintainer email="klaxalk@gmail.com">Tomas Baca</maintainer>
 
   <license file="LICENSE">Proprietary</license>
 

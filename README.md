@@ -1,8 +1,7 @@
-# AgentSwarm Core
+# ArgentSwarm Core
 
-Digest of the relative robot autonomy software at [Fly4Future](https://github.com/fly4future),
-and the starting point of the project **Intent-Aware Sensor for Agile, Dense
-Robot Teams**.
+Digest of relative robot autonomy software, and the starting point of the
+project **Intent-Aware Sensor for Agile, Dense Robot Teams**.
 
 This repository describes what the project aims to build, and the technology it
 builds on: what the existing building blocks are, what each one does, and how
@@ -172,15 +171,15 @@ A compact embedded board, built in-house, that provides:
 ## Software repositories
 
 The software itself is kept in the following private repositories. Access is
-available on request, see [Contact](#contact).
+available on request.
 
 | Repository | Content |
 |---|---|
-| [Multi-sensor fusion and state estimation](https://github.com/fly4future/f4f_uav_core) | Framework core: state estimation, control, trajectory following, motion management, safety. |
-| [fly4future/ultraloc](https://github.com/fly4future/ultraloc) | ULTRALOC relative localization: optical detection and tracking, UWB driver, fusion. |
-| [fly4future/uvdar_firmware](https://github.com/fly4future/uvdar_firmware) | Firmware of the ULTRALOC board: UWB ranging, UV marker control, USB configuration. |
-| [fly4future/ultraloc_deployment](https://github.com/fly4future/ultraloc_deployment) | Containerised deployment and reference configurations for cameras and compute targets. |
-| [fly4future/uvdar_ros_fusion](https://github.com/fly4future/uvdar_ros_fusion) | Earlier UWB and UVDAR fusion, superseded by ULTRALOC. |
+| Multi-sensor fusion and state estimation | Framework core: state estimation, control, trajectory following, motion management, safety. |
+| `ultraloc` | ULTRALOC relative localization: optical detection and tracking, UWB driver, fusion. |
+| `uvdar_firmware` | Firmware of the ULTRALOC board: UWB ranging, UV marker control, USB configuration. |
+| `ultraloc_deployment` | Containerised deployment and reference configurations for cameras and compute targets. |
+| `uvdar_ros_fusion` | Earlier UWB and UVDAR fusion, superseded by ULTRALOC. |
 
 ## Repository contents
 
@@ -209,9 +208,4 @@ Publications on the optical relative localization method used in ULTRALOC:
 
 ## License
 
-Proprietary, © Fly4Future s.r.o., all rights reserved. See [LICENSE](LICENSE).
-
-## Contact
-
-For collaboration, licensing or access to the technology, contact
-[info@fly4future.com](mailto:info@fly4future.com).
+Proprietary, all rights reserved. See [LICENSE](LICENSE).
